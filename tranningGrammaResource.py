@@ -21,7 +21,7 @@ def main():
     data = load_and_preprocess_data(file_path)
     
     # Save the preprocessed data for future use
-    data.to_csv('/Users/cclam/Desktop/CSS495 Capstone/readyToGoGrammarTrainResources/GTP3TrainningResource/preprocessed_grammar_data.csv', index=False)
+    data.to_csv('/Users/cclam/Desktop/CSS497 Capstone/readyToGoGrammarTrainResources/GTP3TrainningResource/preprocessed_grammar_data.csv', index=False)
     print("Data preprocessed and saved to 'preprocessed_grammar_data.csv'")
 
 if __name__ == '__main__':
