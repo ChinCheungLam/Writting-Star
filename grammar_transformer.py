@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import requests
 
 # Explicitly load the .env file from the specified path
-dotenv_path = '/Users/cclam/Desktop/CSS495 Capstone/GTP3Key/key.env'
+dotenv_path = '/Users/cclam/Desktop/CSS497 Capstone/GTP3Key/key.env'
 load_dotenv(dotenv_path)
 
 def load_data(file_path):
@@ -92,9 +92,9 @@ def main():
         return
 
     openai.api_key = api_key
-    data_file = '/Users/cclam/Desktop/CSS495 Capstone/readyToGoGrammarTrainResources/GTP3TrainningResource/preprocessed_grammar_data.csv'
-    output_file = '/Users/cclam/Desktop/CSS495 Capstone/readyToGoGrammarTrainResources/GTP3TrainningResource/gtp3_training_data.jsonl'
-    output_txt = '/Users/cclam/Desktop/CSS495 Capstone/readyToGoGrammarTrainResources/GTP3TrainningResource/output.txt'
+    data_file = '/Users/cclam/Desktop/CSS497 Capstone/readyToGoGrammarTrainResources/GTP3TrainningResource/preprocessed_grammar_data.csv'
+    output_file = '/Users/cclam/Desktop/CSS497 Capstone/readyToGoGrammarTrainResources/GTP3TrainningResource/gtp3_training_data.jsonl'
+    output_txt = '/Users/cclam/Desktop/CSS497 Capstone/readyToGoGrammarTrainResources/GTP3TrainningResource/output.txt'
 
     prepare_training_file(data_file, output_file)
     
