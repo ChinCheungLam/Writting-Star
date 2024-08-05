@@ -4,7 +4,7 @@ import openai
 from dotenv import load_dotenv
 
 # Load the environment variables from the .env file
-dotenv_path = '/Users/cclam/Desktop/CSS495 Capstone/GTP3Key/key.env'
+dotenv_path = '/Users/cclam/Desktop/CSS497 Capstone/GTP3Key/key.env'
 load_dotenv(dotenv_path)
 
 app = Flask(__name__, static_folder='public')
