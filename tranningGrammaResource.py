@@ -17,7 +17,7 @@ def load_and_preprocess_data(file_path):
     return df
 
 def main():
-    file_path = '/Users/cclam/Desktop/CSS495 Capstone/grammarTrainResources/Grammar Correction.csv'
+    file_path = '/Users/cclam/Desktop/CSS497 Capstone/grammarTrainResources/Grammar Correction.csv'
     data = load_and_preprocess_data(file_path)
     
     # Save the preprocessed data for future use
