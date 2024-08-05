@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your File - Writing Star</title>
+    <link rel="stylesheet" href="uploadYourFile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="uploadYourFile.html">Upload Your File</a></li>
+                <li><a href="writeStory.html">Write Story</a></li>
+                <li><a href="grammarChecking&Correction.html">Grammar Checking & Correction</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <header>
+                <h1>Upload Your File</h1>
+                <p>Upload your text files directly to our platform for processing. This feature supports a wide range of document formats and ensures secure handling of your valuable writings.</p>
+            </header>
+            <section class="upload-section">
+                <p class="upload-label">Upload your data here</p>
+                <div class="upload-area" id="upload-area">
+                    <form id="upload-form" enctype="multipart/form-data">
+                        <label for="file-upload" class="file-upload-label">
+                            <div class="upload-icon"></div>
+                            <span>Drag and drop file here</span>
+                            <span class="file-limit">Limit 50MB per file • TXT, DOCX</span>
+                        </label>
+                        <input type="file" id="file-upload" name="file" class="file-upload-input" accept=".txt,.doc,.docx">
+                    </form>
+                    <div id="file-details" class="file-details">
+                        <span id="file-name" class="file-name"></span>
+                        <span id="file-remove" class="file-remove">&times;</span>
+                    </div>
+                    <button id="upload-button" class="upload-button">Upload</button>
+                </div>
+                <div id="file-content" class="file-content"></div>
+            </section>
+        </div>
+    </div>
+    <div id="success-message" class="success-message">File successfully uploaded</div>
+    <script src="uploadYourFile.js"></script>
+</body>
+</html>

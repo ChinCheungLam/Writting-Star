@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Story - Writing Star</title>
+    <link rel="stylesheet" href="writeStory.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="uploadYourFile.html">Upload Your File</a></li>
+                <li><a href="writeStory.html">Write Story</a></li>
+                <li><a href="grammarChecking&Correction.html">Grammar Checking & Correction</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <header>
+                <h1>Write Story</h1>
+                <p>Read the uploaded file and continue writing your story. This platform helps you to craft and refine your written content.</p>
+                <div class="buttons">
+                    <button id="story-section-button" class="toggle-button">Continue Your Story</button>
+                    <button id="outline-generator-button" class="toggle-button">Story Outline Generator</button>
+                    <button id="story-generator-button" class="toggle-button">Story Generator</button>
+                </div>
+            </header>
+            <section id="story-section" class="story-section">
+                <div id="file-content" class="file-content"></div>
+                <button id="continue-your-story-generator-button" class="continue-your-story-generator-button">Continue Your Story Generator</button>
+                <div id="continue-your-story-result" class="continue-your-story-result"></div>
+            </section>
+            <section id="outline-section" class="outline-section" style="display: none;">
+                <h2>Story Outline Generator</h2>
+                <textarea id="outline-prompt" class="outline-prompt" placeholder="Enter a prompt for your story outline..."></textarea>
+                <button id="generate-outline-button" class="generate-button">Generate Outline</button>
+                <button id="advanced-outline-button" class="advanced-button">Advanced Options</button>
+                <div id="advanced-outline-options" class="advanced-options">
+                    <label for="outline-story-size">Story Size:</label>
+                    <select id="outline-story-size" class="story-size">
+                        <option value="short">Short</option>
+                        <option value="medium">Medium</option>
+                        <option value="long">Long</option>
+                    </select>
+                    
+                    <label for="outline-genre">Genre:</label>
+                    <select id="outline-genre" class="genre">
+                        <option value="fairy-tales">Fairy Tales</option>
+                        <option value="juvenile-fiction">Juvenile Fiction</option>
+                    </select>
+                </div>
+                <div id="outline-result" class="outline-result"></div>
+            </section>
+            <section id="story-generator-section" class="story-generator-section" style="display: none;">
+                <h2>Story Generator</h2>
+                <textarea id="story-generator-prompt" class="story-prompt" placeholder="Enter a prompt for your story..."></textarea>
+                <button id="generate-story-button" class="generate-button">Generate Story</button>
+                <button id="advanced-story-button" class="advanced-button">Advanced Options</button>
+                <div id="advanced-story-options" class="advanced-options">
+                    <label for="character-details">Character Details:</label>
+                    <input type="text" id="character-details" class="character-details" placeholder="Describe your characters...">
+                    
+                    <label for="story-size">Story Size:</label>
+                    <select id="story-size" class="story-size">
+                        <option value="short">Short</option>
+                        <option value="medium">Medium</option>
+                        <option value="long">Long</option>
+                    </select>
+                    
+                    <label for="genre">Genre:</label>
+                    <select id="genre" class="genre">
+                        <option value="fairy-tales">Fairy Tales</option>
+                        <option value="juvenile-fiction">Juvenile Fiction</option>
+                    </select>
+                    
+                    <label for="narrative-perspective">Narrative Perspective:</label>
+                    <select id="narrative-perspective" class="narrative-perspective">
+                        <option value="first-person">First Person</option>
+                        <option value="third-person">Third Person</option>
+                    </select>
+                </div>
+                <div id="story-result" class="story-result"></div>
+            </section>
+        </div>
+    </div>
+    <script src="writeStory.js"></script>
+</body>
+</html>
